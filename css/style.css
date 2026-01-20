@@ -108,7 +108,7 @@ footer {
   display: flex;
   align-items: flex-start;
   gap: 20px;
-  width: 300%;
+  width: 80%;          
   margin: 0 auto 30px;
 }
 
@@ -122,4 +122,9 @@ footer {
   flex: 1;
   font-size: 16px;
   line-height: 1.6;
+}
+
+/* 反転レイアウト（文章 → 写真） */
+.intro-box.reverse {
+  flex-direction: row-reverse;
 }
