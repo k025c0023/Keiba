@@ -4,91 +4,108 @@
   <meta charset="UTF-8">
   <title>競馬情報サイト</title>
   <link rel="stylesheet" href="css/style.css">
-  <!--googleフォント-->
+
+  <!-- Googleフォント -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family-Philosopher&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
+  <!-- ===== ヘッダー ===== -->
   <header>
-    <!-- ロゴ -->
-    <img src="images/logo2.png" alt="ええ" class="logo">
-
-    <!-- サイトタイトル（中央） -->
+    <img src="images/logo2.png" alt="ロゴ" class="logo">
     <h1 class="site-title">競馬情報サイト</h1>
 
-  <nav>
-  <ul>
-    <li><a href="index.html" class="nav-btn">ホーム</a></li>
-    <li><a href="introduction.html" class="nav-btn">馬紹介</a></li>
-  </ul>
-</nav>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="nav-btn">ホーム</a></li>
+        <li><a href="introduction.html" class="nav-btn">馬紹介</a></li>
+      </ul>
+    </nav>
   </header>
-<h2 class="section-title">過去の歴史</h2>
 
-<!-- 1つ目：左画像 → 右文章 -->
-<div class="intro-box">
-  <img src="images/gurannpuri.jpg" alt="紹介画像" class="intro-img">
+  <!-- ===== メインコンテンツ ===== -->
+  <main>
 
-  <p class="intro-text">
-    有馬記念は初回は中山グランプリとゆう名前で開催されましたが、<br>
-    創設した有馬氏がその年に亡くなったため、その栄誉を称え有馬記念と名がつけられた背景があります。
-  </p>
-</div>
+    <h2 class="section-title">過去の歴史</h2>
 
-<!-- 2つ目：左文章 → 右画像（reverse） -->
-<div class="intro-box reverse">
-  <p class="intro-text">
-    ジャパンカップは、1981年に「世界に通用する強い馬作り」を目指し、日本初の国際招待競走として日本中央競馬会（JRA）が創設しました。東京競馬場・芝2400mで行われ、海外のトップホースを招待して日本の有力馬と競わせることで、日本競馬のレベルアップを図るのが目的で、第1回はアメリカのメアジードーツが制覇しました。 <br>
-    
-  </p>
-
-  <img src="images/JC.jpg" alt="紹介画像" class="intro-img">
-</div>
-<h2 class="section-title">活躍した名馬</h2>
-<div class="intro-box">
-  <img src="images/oguri.jpg" alt="紹介画像" class="intro-img">
-
-  <p class="intro-text">
-    オグリキャップとは、1980年代後半から90年代初頭に活躍し、競馬ブームを牽引した伝説的な競走馬で、「芦毛の怪物」の愛称で親しまれ、地方競馬（笠松競馬）から中央競馬へ移籍して大成功を収め、数々のドラマと人気を巻き起こした国民的アイドルホースです。地味な血統ながら圧倒的な強さと魅力的な走りを見せ、特に現役最後のレースとなった有馬記念での奇跡的な復活優勝は、競馬史に残る名場面として語り継がれています
-  </p>
-</div>
-<div class="intro-box">
-  <img src="images/spechial.jpg" alt="紹介画像" class="intro-img">
-
-  <p class="intro-text">
-    スペシャルウィークは1990年代後半に活躍した日本競馬を代表する名馬で、日本ダービー、天皇賞（春）、ジャパンカップを制して王道路線の頂点に立った。特にジャパンカップでは世界の強豪を相手に勝利し、日本馬の実力を国際舞台で示した存在である。当時の日本競馬界は海外との戦いを強く意識し始めた時代であり、スペシャルウィークはその中心として大きな期待を背負っていた。その姿は日本競馬そのものを体現するものと受け止められた。こうした背景から、彼は「日本総大将」と呼ばれるようになった。
-
-
-  </p>
-</div>
-
-<!-- [ページトップへ戻るボタン（コンテンツ内）] -->
-<div id="back_to_top"><a href="#"><img src="images/btn_back_to_top.svg" alt="ページのトップへ戻る" /></div></a></div>
-<footer class="site-footer">
-  <div class="footer-inner">
-
-    <div class="footer-section">
-      <h3>メニュー</h3>
-      <ul>
-        <li><a href="index.html">ホーム</a></li>
-        <li><a href="introduction.html">馬紹介</a></li>
-      </ul>
+    <!-- 1つ目：左画像 → 右文章 -->
+    <div class="intro-box">
+      <img src="images/gurannpuri.jpg" alt="紹介画像" class="intro-img">
+      <p class="intro-text">
+        有馬記念は初回は中山グランプリとゆう名前で開催されましたが、<br>
+        創設した有馬氏がその年に亡くなったため、その栄誉を称え有馬記念と名がつけられた背景があります。
+      </p>
     </div>
 
-    <div class="footer-section">
-      <h3>関連リンク</h3>
-      <ul>
-        <li><a href="https://www.jra.go.jp/" target="_blank">JRA公式サイト</a></li>
-        <li><a href="https://www.netkeiba.com/" target="_blank">netkeiba</a></li>
-      </ul>
+    <!-- 2つ目：左文章 → 右画像 -->
+    <div class="intro-box reverse">
+      <p class="intro-text">
+        ジャパンカップは、1981年に「世界に通用する強い馬作り」を目指し、日本初の国際招待競走として日本中央競馬会（JRA）が創設しました。
+        東京競馬場・芝2400mで行われ、海外のトップホースを招待して日本の有力馬と競わせることで、日本競馬のレベルアップを図るのが目的で、
+        第1回はアメリカのメアジードーツが制覇しました。
+      </p>
+      <img src="images/JC.jpg" alt="紹介画像" class="intro-img">
     </div>
 
-    <div class="footer-section">
-      <h3>運営情報</h3>
-      <p>© 2026 競馬情報サイト</p>
+    <h2 class="section-title">活躍した名馬</h2>
+
+    <div class="intro-box">
+      <img src="images/oguri.jpg" alt="紹介画像" class="intro-img">
+      <p class="intro-text">
+        オグリキャップとは、1980年代後半から90年代初頭に活躍し、競馬ブームを牽引した伝説的な競走馬で、「芦毛の怪物」の愛称で親しまれました。
+        地方競馬（笠松競馬）から中央競馬へ移籍して大成功を収め、特に現役最後のレースとなった有馬記念での奇跡的な復活優勝は、
+        競馬史に残る名場面として語り継がれています。
+      </p>
     </div>
 
-  </div>
-</footer>
+    <div class="intro-box">
+      <img src="images/spechial.jpg" alt="紹介画像" class="intro-img">
+      <p class="intro-text">
+        スペシャルウィークは1990年代後半に活躍した日本競馬を代表する名馬で、日本ダービー、天皇賞（春）、ジャパンカップを制して王道路線の頂点に立ちました。
+        特にジャパンカップでは世界の強豪を相手に勝利し、日本馬の実力を国際舞台で示した存在です。
+        こうした背景から、彼は「日本総大将」と呼ばれるようになりました。
+      </p>
+    </div>
+
+    <!-- ページトップへ戻る -->
+    <div id="back_to_top">
+      <a href="#">
+        <img src="images/btn_back_to_top.svg" alt="ページのトップへ戻る">
+      </a>
+    </div>
+
+  </main>
+
+  <!-- ===== フッター ===== -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+
+      <div class="footer-section">
+        <h3>メニュー</h3>
+        <ul>
+          <li><a href="index.html">ホーム</a></li>
+          <li><a href="introduction.html">馬紹介</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>関連リンク</h3>
+        <ul>
+          <li><a href="https://www.jra.go.jp/" target="_blank">JRA公式サイト</a></li>
+          <li><a href="https://www.netkeiba.com/" target="_blank">netkeiba</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>運営情報</h3>
+        <p>© 2026 競馬情報サイト</p>
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+</html>

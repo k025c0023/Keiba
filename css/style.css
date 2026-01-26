@@ -1,15 +1,18 @@
+/* ===== 全体 ===== */
 body {
   margin: 0;
   font-family: "Segoe UI", sans-serif;
   background-color: #f5f5f5;
+  color: #333;
+  text-align: center;
 }
 
-/* ヘッダー */
+/* ===== ヘッダー ===== */
 header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #0b6623; /* 芝っぽい緑 */
+  background-color: #0b6623;
   padding: 10px 20px;
   color: white;
 }
@@ -43,7 +46,7 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/* カード */
+/* ===== カード ===== */
 .card {
   background: white;
   width: 80%;
@@ -53,7 +56,6 @@ nav a:hover {
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-/* カード上部（画像＋h2を横並び） */
 .card-header {
   display: flex;
   align-items: center;
@@ -70,7 +72,7 @@ nav a:hover {
   margin: 0;
 }
 
-/* ボタン */
+/* ===== ボタン ===== */
 .btn {
   display: inline-block;
   padding: 10px 20px;
@@ -85,15 +87,7 @@ nav a:hover {
   background-color: #0056b3;
 }
 
-/* フッター */
-footer {
-  text-align: center;
-  padding: 10px;
-  background-color: #222;
-  color: white;
-  margin-top: 40px;
-}
-
+/* ===== セクションタイトル ===== */
 .section-title {
   text-align: center;
   font-size: 26px;
@@ -104,11 +98,12 @@ footer {
   border-bottom: 3px solid #0b6623;
 }
 
+/* ===== 画像＋文章のボックス ===== */
 .intro-box {
   display: flex;
   align-items: flex-start;
   gap: 20px;
-  width: 80%;          
+  width: 80%;
   margin: 0 auto 30px;
 }
 
@@ -124,10 +119,11 @@ footer {
   line-height: 1.6;
 }
 
-/* 反転レイアウト（文章 → 写真） */
+/* 反転レイアウト */
 .intro-box.reverse {
   flex-direction: row-reverse;
 }
+
 /* ===== フッター ===== */
 .site-footer {
   background: #222;
@@ -139,9 +135,10 @@ footer {
 .footer-inner {
   max-width: 1000px;
   margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
+  display: flex;           /* ← 追加 */
+  justify-content: center; /* ← 中央揃え */
   flex-wrap: wrap;
+  gap: 40px;               /* ← ブロック間の余白（任意） */
 }
 
 .footer-section {
@@ -178,4 +175,27 @@ footer {
 
 .site-footer p {
   margin: 0;
+}
+/* ===== グリッドレイアウト（2列） ===== */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2列にする */
+  gap: 20px; /* カード同士の間隔 */
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* 各ブロックの見た目調整 */
+.block {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* 画像サイズ調整 */
+.photo {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
 }
