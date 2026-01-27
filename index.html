@@ -4,20 +4,15 @@
   <meta charset="UTF-8">
   <title>競馬情報サイト</title>
   <link rel="stylesheet" href="css/style.css">
-
-  <!-- Googleフォント -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
-  <!-- ===== ヘッダー ===== -->
   <header>
     <img src="images/logo2.png" alt="ロゴ" class="logo">
     <h1 class="site-title">競馬情報サイト</h1>
-
     <nav>
       <ul>
         <li><a href="history.html">歴史を見る</a></li>
@@ -26,54 +21,50 @@
     </nav>
   </header>
 
-  <!-- ===== メイン ===== -->
   <main>
-
     <section class="card">
-
       <div class="card-header">
         <img src="images/Arima.png" alt="有馬記念" class="race-img">
         <h2>去年の振り返り</h2>
       </div>
-
-      <p>
-        去年の有馬記念は70周年という節目の年で、メンバーも豪華になりました。
-        G1馬が7頭揃いレベルが非常に高かったレースでしたが、勝ったのは意外にも3歳のミュージアムマイルで、
-        この結末には会場も大歓声が沸きました。
-      </p>
-
+      <p>去年の有馬記念は70周年という節目の年で、メンバーも豪華になりました…</p>
       <img src="images/myu-zi.png" alt="去年の有馬記念" class="race-photo">
-
-      <p>
-        2着には最終11番人気のコスモキュランダが好走し、3着にはダービー馬のダノンデサイルが入りました。
-        去年を締めくくるにふさわしいレースだったと思います。
-      </p>
-
+      <p>2着には最終11番人気のコスモキュランダが好走し、3着にはダービー馬のダノンデサイルが入りました。 去年を締めくくるにふさわしいレースだったと思います。</p>
     </section>
 
-    <!-- ===== 情報セクション ===== -->
+    <!-- スライドショー（既存） -->
+<div class="slideshow">
+  <img src="images/spechial.jpg" class="slide active" alt="スペシャルウィーク">
+  <img src="images/gurass2.jpg" class="slide" alt="グラスワンダー">
+  <img src="images/toukaiteio2.jpg" class="slide" alt="トウカイテイオー">
+  <img src="images/MAC2.jpg" class="slide" alt="メジロマックイーン">
+</div>
+
+<!-- 追加するスライドエリア -->
+<div id="slide_area">
+  <div id="slide">
+    <div id="image_area">
+      <img id="img" src="images/spechial.jpg" alt="スライド画像">
+    </div>
+  </div>
+
+  <div id="btn_area">
+    <div class="btn" id="prev">戻る</div>
+    <div class="btn" id="next">進む</div>
+  </div>
+</div>
+
     <footer class="page-footer">
       <h3 class="heading-large font-english">Information</h3>
-
       <table class="info">
-        <tr>
-          <th>URL</th>
-          <td>https://race.netkeiba.com/special/index.html?id=0133</td>
-        </tr>
+        <tr><th>URL</th><td>https://race.netkeiba.com/special/index.html?id=0133</td></tr>
       </table>
-
-      <div class="align-center">
-        <a class="btn" href="history.html">歴史を見る</a>
-      </div>
-
-      <div class="copyright">
-        <small>&copy; 2026 競馬情報サイト</small>
-      </div>
+      <div class="align-center"><a class="btn" href="history.html">歴史を見る</a></div>
+      <div class="copyright"><small>&copy; 2026 競馬情報サイト</small></div>
     </footer>
-
   </main>
+
+  <script src="./js/java.js"></script>
 
 </body>
 </html>
-
-
